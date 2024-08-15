@@ -25,6 +25,7 @@ const whenExternalScripts = (items = []) =>
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
+  outDir: './dist',
   output: 'static',
 
   integrations: [
