@@ -26,6 +26,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   site: 'https://smallleeks.github.io/blog/',
+  base: '/blog',
   outDir: './dist',
   output: 'static',
 
