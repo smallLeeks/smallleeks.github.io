@@ -1,15 +1,25 @@
 {
-  "css.customData": ["./vscode.tailwind.json"],
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
-  "files.associations": {
-    "*.mdx": "markdown"
-  },
-  "prettier.documentSelectors": ["**/*.astro"],
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
-  "yaml.schemas": {
-    "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
-  },
-  "eslint.useFlatConfig": true
+    "css.customData": ["./vscode.tailwind.json"],
+    "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+    "files.associations": {
+        "*.mdx": "markdown"
+    },
+    "prettier.documentSelectors": ["**/*.astro"],
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "yaml.schemas": {
+        "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
+    },
+    "eslint.useFlatConfig": true,
+    // 保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // 默认格式化工具选择prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 需要 prettier 的配置文件
+    "prettier.requireConfig": true,
+    // 默认 4 个空格
+    "editor.tabSize": 4,
+    // 设置是否开启prettier插件，默认为true，即开启
+    "prettier.enable": true,
 }
